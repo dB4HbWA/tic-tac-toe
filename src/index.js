@@ -166,6 +166,7 @@ class Game extends React.Component {
   	return false;
   }
 
+  // note: only call this function if calculateWinner() returns false!
   calculateTie(){
   	for (let i = 0; i < this.state.squareState.length; i++){
   		if(!this.state.squareState[i]) {
